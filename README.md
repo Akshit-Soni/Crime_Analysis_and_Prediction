@@ -1,13 +1,11 @@
 
 # Crime Analysis & Prediction
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
-[![Build Status](https://img.shields.io/badge/Notebook-Ready-yellow)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  [![Build Status](https://img.shields.io/badge/Notebook-Ready-yellow)]()
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Crime Analysis & Prediction** is a comprehensive data-science project that explores Chicago crime data (2018–2019), uncovers temporal and spatial patterns, and builds predictive models for arrest likelihood. It covers:
 
@@ -22,7 +20,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🗂 Dataset
+## Dataset
 
 - **Source file:** `crime.csv`  
 - **Rows:** ~491,000 records (before cleaning)  
@@ -35,7 +33,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🔧 Environment & Installation
+## Environment & Installation
 
 1. **Clone the repo**  
    ```bash
@@ -61,7 +59,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+## Data Cleaning & Preprocessing
 
 1. **Column standardization**  
    - Strip whitespace, remove commas/spaces, convert to lowercase, replace spaces with underscores.  
@@ -75,7 +73,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## ⚙️ Feature Engineering
+##  Feature Engineering
 
 - **Datetime features**  
   - Convert `date` → `datetime`; extract `day_of_week`, `month`, `hour` (`time`).  
@@ -94,7 +92,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 1. **Temporal trends**  
    - **Weekday:** Uniform distribution; slight decrease in 2019.  
@@ -116,7 +114,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🤖 Modeling & Results
+## Modeling & Results
 
 ### 1. Data Preparation for Modeling
 
@@ -144,7 +142,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 📈 Unsupervised Clustering (Optional)
+## Unsupervised Clustering (Optional)
 
 - **Hierarchical clustering** (dendrogram) to identify correlated missing/value patterns.  
 - **K-Means** & **DBSCAN** on selected features (time, location, zone) to discover crime clusters without labels.  
@@ -152,7 +150,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. **Run the notebook**: Open `analysis_of_crimes.ipynb` and execute cells sequentially.  
 2. **Modify parameters**:  
@@ -164,7 +162,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -176,10 +174,10 @@ Be sure to follow existing code style and add descriptive markdown for any new a
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
-*Happy analyzing!* 🚓🔍  
+*Happy analyzing!* 
