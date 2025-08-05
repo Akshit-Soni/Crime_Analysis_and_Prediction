@@ -23,7 +23,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 ## Dataset
 
 - **Source file:** `crime.csv`  
-- **Rows:** ~491,000 records (before cleaning)  
+- **Rows:** ~530,000 records (before cleaning)  
 - **Columns:**  
   - **Identifiers & metadata:** `id`, `case_number`, `date`, `updated_on`, `fbi_code`, `iucr`  
   - **Location data:** `block`, `location_description`, `latitude`, `longitude`, `x_coordinate`, `y_coordinate`, `district`, `ward`, `community_area`, `beat`  
