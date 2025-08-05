@@ -1,7 +1,7 @@
 
 # Crime Analysis & Prediction
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  [![Build Status](https://img.shields.io/badge/Notebook-Ready-yellow)]()
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)  [![Build Status](https://img.shields.io/badge/Notebook-Ready-yellow)]()
 
 ---
 
@@ -22,7 +22,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 ## Dataset
 
-- **Source file:** `crime.csv`  
+- **Source file:** `Crimes_-_2001_to_Present_20250805.csv`  
 - **Rows:** ~530,000 records (before cleaning)  
 - **Columns:**  
   - **Identifiers & metadata:** `id`, `case_number`, `date`, `updated_on`, `fbi_code`, `iucr`  
@@ -37,8 +37,8 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/yourusername/crime-analysis.git
-   cd crime-analysis
+   git clone https://github.com/Akshit-Soni/Crime_Analysis_and_Prediction.git
+   cd Crime_Analysis_and_Prediction
    ```
 
 2. **Create & activate a virtual environment**  
@@ -47,12 +47,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
    source venv/bin/activate
    ```
 
-3. **Install dependencies**  
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Launch the Jupyter notebook**  
+3. **Launch the Jupyter notebook**  
    ```bash
    jupyter notebook analysis_of_crimes.ipynb
    ```
@@ -69,7 +64,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
    - Visualize with `missingno` heatmap & dendrogram.  
    - Drop rows where `latitude` (and co-missing fields) is null.  
    - Drop remaining rows with any null in `ward` or `community_area`.  
-   - Final size: ~484,234 rows.  
+   - Final size: ~520,000 rows.  
 
 ---
 
@@ -80,9 +75,9 @@ This README describes the dataset, preprocessing steps, feature transformations,
 - **Season mapping**  
   - Map months → Spring/Summer/Fall/Winter.  
 - **Crime type grouping**  
-  - Aggregate granular `primary_type` into 7 broad categories (THEFT, ASSAULT, etc.).  
+  - Aggregate granular `primary_type` into 8 broad categories (THEFT, ASSAULT, etc.).  
 - **Location grouping**  
-  - Collapse `location_description` into 7 buckets (RESIDENCE, BUSINESS, PUBLIC_AREA, etc.).  
+  - Collapse `location_description` into 8 buckets (RESIDENCE, BUSINESS, PUBLIC_AREA, etc.).  
 - **Zone extraction**  
   - Derive `zone` (North/South/East/West) from block prefixes.  
 - **Boolean flags**  
@@ -101,11 +96,11 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 2. **Spatial patterns**  
    - **Zones:** South side highest crime density; East side lowest.  
-   - **Residences & public areas** account for ~60% of incidents.  
+   - **Residences & public areas** account for ~70% of incidents.  
    - **District maps:** Scatter plots of (X, Y) coordinates colored by district & crime type reveal hot spots.
 
 3. **Crime composition**  
-   - **Pie charts:** THEFT & NON-CRIMINAL_ASSAULT ~50% of total.  
+   - **Pie charts:** THEFT & NON-CRIMINAL_ASSAULT ~60% of total.  
    - **Bar plots:** Top 20 crime types confirm dominance of THEFT and BATTERY.
 
 4. **Arrest analysis**  
@@ -138,7 +133,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 - **Confusion Matrix** and **ROC curves** for binary arrest prediction.
 
 > **Example result:**  
-> Random Forest achieved ~78% accuracy, F1-score of 0.75 on the positive (arrest) class.
+> Random Forest achieved ~86% accuracy, F1-score of 0.75 on the positive (arrest) class.
 
 ---
 
@@ -171,12 +166,6 @@ Contributions are welcome! Please:
 3. Commit your changes & open a Pull Request.  
 
 Be sure to follow existing code style and add descriptive markdown for any new analysis.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
