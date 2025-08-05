@@ -49,7 +49,7 @@ This README describes the dataset, preprocessing steps, feature transformations,
 
 3. **Launch the Jupyter notebook**  
    ```bash
-   jupyter notebook analysis_of_crimes.ipynb
+   jupyter notebook analysis_of_crime.ipynb
    ```
 
 ---
